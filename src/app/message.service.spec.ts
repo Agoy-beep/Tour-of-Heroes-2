@@ -20,9 +20,11 @@ fdescribe('MessageService', () => {
     messageService = new MessageService(loggerService);
   });
   it('should log every time a clear button is clicked', () => {
+    messageService.add('Messages cleared!');
+
     messageService.clear();
 
-    expect(loggerService.log).toHaveBeenCalledTimes(1);
+    expect(loggerService.log).toHaveBeenCalledWith('Messages cleared!');
   });
   it('should log every message to the logger service', () =>{
     messageService.add('A test message');

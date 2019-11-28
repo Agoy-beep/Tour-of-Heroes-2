@@ -11,17 +11,6 @@
   </div>
 </div>
 
-<div>
-  <label>Hero name:
-    <input #heroName />
-  </label>
-  <!-- (click) passes input value to add() and then clears the input -->
-  <button (click)="add(heroName.value); heroName.value=''">
-    add
-  </button>
-</div>
-
 <button (click)="goBack()">go back</button>
 <button (click)="save()">save</button>
-<button class="delete" title="delete hero"
-        (click)="delete(hero)">x</button>
+
