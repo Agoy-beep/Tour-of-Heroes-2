@@ -1,4 +1,4 @@
-import {HeroesPage} from "./hero.po";
+import {HeroesPage} from "../../cypress/integration/hero.po";
 
 fdescribe('Heroes', () => {
   let heroesPage = new HeroesPage();
